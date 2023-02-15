@@ -1,12 +1,14 @@
 var WebSocket = new require('ws');
 
-var argv = require('minimist')(process.argv.slice(2), {string: ['port'], default: {port: 1207}});
+var argv = require('minimist')(process.argv.slice(2), {string: ['port'], default: {port: 1209}});
+const port = 1207;
+
 
 var server = new WebSocket.Server({
   clientTracking: true,
-  port: argv['port']
+  port: port
 }, function () {
-  console.log('WebSocket server started on port: ' + argv['port']);
+  console.log('WebSocket server started on port: ' + port);
 });
 
 var shutdown = function () {
@@ -30,8 +32,8 @@ server.on('error', function (err) {
   console.log(err);
 });
 
-var hexColorRegExp = /^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$/;
-var typeRegExp = /^(top|bottom|right)$/;
+var hexColorRegExp = /^\d{8}$/;
+var typeRegExp = /^(0|1|2)$/;
 var msgMinInterval = 500;
 var lastMsgTimestamps = {};
 

@@ -1,8 +1,6 @@
 var WebSocket = new require('ws');
 
-var argv = require('minimist')(process.argv.slice(2), {string: ['port'], default: {port: 1209}});
 const port = 1207;
-
 
 var server = new WebSocket.Server({
   clientTracking: true,

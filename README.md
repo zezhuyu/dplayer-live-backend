@@ -2,7 +2,7 @@
 
 Author： [Viktor Khokhryakov](https://github.com/Izumi-kun)
 
-Original Repe: https://github.com/Izumi-kun/dplayer-live-backend
+Original Repo: https://github.com/Izumi-kun/dplayer-live-backend
 
 Repo: https://github.com/zezhuyu/dplayer-live-backend
 

@@ -16,7 +16,7 @@ docker pull zezhuyu/dplayer_live_danmaku
 Run:
 
 ```sh
-docker run -d -p 1207:1207 --restart unless-stopped zezhuyu/dplayer-live-backend
+docker run -d -p 1207:1207 --restart unless-stopped zezhuyu/dplayer_live_danmaku
 ```
 
 ## Build
